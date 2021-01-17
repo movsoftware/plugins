@@ -1,0 +1,31 @@
+#!/bin/sh
+#
+# $FreeBSD$
+#
+# PROVIDE: yaf
+# REQUIRE: DAEMON
+#
+# Add the following lines to /etc/rc.conf to run yaf:
+#
+# yaf_enable (bool):           Set it to "YES" to enable yaf.
+#                                Default is "NO".
+# yaf_conf (file):             Local config file.
+#                                Default is "/usr/local/etc/yaf.conf".
+# yaf_flags (string):          Flags to pass to yaf.
+#                                Default is empty.
+#
+
+. /etc/rc.subr
+
+name="yaf"
+rcvar=yaf_enable
+load_rc_config ${name}
+
+: ${yaf_enable="NO"}
+: ${yaf_conf="/usr/local/etc/yaf.conf"}
+
+required_files="${yaf_conf}"
+command="/usr/local/bin/yaf"
+command_args="--config ${yaf_conf} --daemonize"
+
+run_rc_command "$1"

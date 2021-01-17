@@ -1,0 +1,8 @@
+{% if helpers.exists('OPNsense.yaf.general.enabled') and OPNsense.yaf.general.enabled == '1' %}
+yaf_var_script="/usr/local/opnsense/scripts/OPNsense/yaf/setup.sh"
+yaf_enable="YES"
+yaf_flags="/usr/local/etc/yaf.conf"
+{% else %}
+yaf_enable="NO"
+{% endif %}
+yaf_var_mfs="/var/db/yaf"

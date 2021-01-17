@@ -1,0 +1,9 @@
+<acl>
+   <page-yaf-config>
+      <name>Services: yaf</name>
+      <patterns>
+         <pattern>ui/yaf/*</pattern>
+         <pattern>api/yaf/*</pattern>
+      </patterns>
+   </page-yaf-config>
+</acl>

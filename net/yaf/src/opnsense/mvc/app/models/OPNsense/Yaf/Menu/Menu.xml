@@ -1,0 +1,5 @@
+<menu>
+    <Services>
+        <Yaf cssClass="fa fa-binoculars fa-fw" url="/ui/yaf/general/index" />
+    </Services>
+</menu>

@@ -1,0 +1,26 @@
+<form>
+    <field>
+        <id>general.enabled</id>
+        <label>Enable yaf</label>
+        <type>checkbox</type>
+        <help>This will activate yaf.</help>
+    </field>
+    <field>
+        <id>general.interface</id>
+        <label>Interfaces</label>
+        <type>dropdown</type>
+        <help>Select the interface to listen to.</help>
+    </field>
+    <field>
+        <id>general.yafhost</id>
+        <label>Host</label>
+        <type>text</type>
+        <help>Host of the YAF Service to export to.</help>
+    </field>
+    <field>
+        <id>general.yafport</id>
+        <label>Port</label>
+        <type>text</type>
+        <help>TCP Port of the YAF IPFIX Service to export to.</help>
+    </field>
+</form>
