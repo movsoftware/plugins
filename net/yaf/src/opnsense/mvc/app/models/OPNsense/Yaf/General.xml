@@ -19,5 +19,9 @@
             <Required>Y</Required>
             <default>18000</default>
         </yafport>
+        <yafconfig type="TextField">
+            <Required>N</Required>
+            <default></default>
+        </yafconfig>
     </items>
 </model>
