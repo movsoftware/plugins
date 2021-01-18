@@ -12,11 +12,11 @@
             <Multiple>N</Multiple>
         </interface>
         <yafhost type="TextField">
-            <Required>Y</Required>
+            <Required>N</Required>
             <default>127.0.0.1</default>
         </yafhost>
         <yafport type="PortField">
-            <Required>Y</Required>
+            <Required>N</Required>
             <default>18000</default>
         </yafport>
         <yafconfig type="TextField">

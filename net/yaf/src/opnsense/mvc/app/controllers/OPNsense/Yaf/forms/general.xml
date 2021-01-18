@@ -26,7 +26,7 @@
     <field>
         <id>general.yafconfig</id>
         <label>Config</label>
-        <type>text</type>
+        <type>textbox</type>
         <advanced>true</advanced>
         <help>YAF config text for yaf.conf file. This overrides above configuration.</help>
     </field>
