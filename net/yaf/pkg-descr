@@ -5,6 +5,8 @@ those flows to IPFIX Collecting Processes or in an IPFIX-based file
 format. YAF's output can be used with the SiLK flow analysis tools, 
 super_mediator, Pipeline 5, and any other IPFIX compliant toolchain.
 
+This package allows the export of flows to a YAF compatible endpoint.
+
 
 Plugin Changelog
 ================
