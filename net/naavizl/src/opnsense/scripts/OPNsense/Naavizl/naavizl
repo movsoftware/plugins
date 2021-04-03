@@ -1,0 +1,31 @@
+#!/bin/sh
+#
+# $FreeBSD$
+#
+# PROVIDE: naavizl
+# REQUIRE: DAEMON
+#
+# Add the following lines to /etc/rc.conf to run naavizl:
+#
+# naavizl_enable (bool):           Set it to "YES" to enable naavizl.
+#                                Default is "NO".
+# naavizl_conf (file):             Local config file.
+#                                Default is "/usr/local/etc/naavizl.conf".
+# naavizl_flags (string):          Flags to pass to naavizl.
+#                                Default is empty.
+#
+
+. /etc/rc.subr
+
+name="naavizl"
+rcvar=naavizl_enable
+load_rc_config ${name}
+
+: ${naavizl_enable="NO"}
+: ${naavizl_conf="/usr/local/etc/naavizl.conf"}
+
+required_files="${naavizl_conf}"
+command="/usr/local/bin/naavizl"
+command_args="--config ${naavizl_conf} --daemonize"
+
+run_rc_command "$1"

@@ -1,0 +1,9 @@
+<acl>
+   <page-naavizl-config>
+      <name>Services: naavizl</name>
+      <patterns>
+         <pattern>ui/naavizl/*</pattern>
+         <pattern>api/naavizl/*</pattern>
+      </patterns>
+   </page-naavizl-config>
+</acl>

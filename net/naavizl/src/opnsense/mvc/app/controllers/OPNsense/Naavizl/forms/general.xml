@@ -1,0 +1,33 @@
+<form>
+    <field>
+        <id>general.enabled</id>
+        <label>Enable naavizl</label>
+        <type>checkbox</type>
+        <help>This will activate naavizl.</help>
+    </field>
+    <field>
+        <id>general.interface</id>
+        <label>Interfaces</label>
+        <type>dropdown</type>
+        <help>Select the interface to listen to.</help>
+    </field>
+    <field>
+        <id>general.naavizlhost</id>
+        <label>Host</label>
+        <type>text</type>
+        <help>Host of the Naavizl Service to export to.</help>
+    </field>
+    <field>
+        <id>general.naavizlport</id>
+        <label>Port</label>
+        <type>text</type>
+        <help>TCP Port of the Naavizl Service to export to.</help>
+    </field>
+    <field>
+        <id>general.naavizlconfig</id>
+        <label>Config</label>
+        <type>textbox</type>
+        <advanced>true</advanced>
+        <help>Naavizl config text for naavizl.conf file. This overrides above configuration.</help>
+    </field>
+</form>

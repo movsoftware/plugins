@@ -1,0 +1,8 @@
+{% if helpers.exists('OPNsense.naavizl.general.enabled') and OPNsense.naavizl.general.enabled == '1' %}
+naavizl_var_script="/usr/local/opnsense/scripts/OPNsense/naavizl/setup.sh"
+naavizl_enable="YES"
+naavizl_flags=""
+{% else %}
+naavizl_enable="NO"
+{% endif %}
+naavizl_var_mfs="/var/db/naavizl"

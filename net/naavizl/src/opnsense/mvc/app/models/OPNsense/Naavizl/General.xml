@@ -1,0 +1,27 @@
+<model>
+    <mount>//OPNsense/naavizl/general</mount>
+    <description>naavizl configuration</description>
+    <version>0.0.1</version>
+    <items>
+        <enabled type="BooleanField">
+            <default>0</default>
+            <Required>Y</Required>
+        </enabled>
+        <interface type="InterfaceField">
+            <Required>N</Required>
+            <Multiple>N</Multiple>
+        </interface>
+        <naavizlhost type="TextField">
+            <Required>N</Required>
+            <default>127.0.0.1</default>
+        </naavizlhost>
+        <naavizlport type="PortField">
+            <Required>N</Required>
+            <default>18000</default>
+        </naavizlport>
+        <naavizlconfig type="TextField">
+            <Required>N</Required>
+            <default></default>
+        </naavizlconfig>
+    </items>
+</model>
